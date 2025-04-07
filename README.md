@@ -57,7 +57,7 @@ Before running the tests, ensure you have the following installed:
 
 1. Clone this repository:
    ```bash
-   git clone https://github.com/your-username/serverest-automation.git
+   git clone https://github.com/JAIMEjun10r/serverest-automation.git
    cd serverest-automation
 
 2. npm install
