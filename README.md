@@ -26,11 +26,21 @@ ServeRest is a RESTful API available online, via npm, or through Docker. It is d
 
 ---
 
-## Project Structure
+### Project Structure
 
-The project is organized as follows:
+```
+cypress/
+├── e2e/
+│   ├── usuario.cy.js        # Tests for user management
+│   └── login.cy.js          # Tests for authentication
+├── support/
+│   ├── commands/
+│   │   ├── usuario.js       # Custom Cypress commands for user management
+│   │   └── login.js         # Custom Cypress commands for authentication
+│   └── utils/
+│       └── funcoes.js       # Utility functions for generating random data
+```
 
-/cypress ├── /e2e │ ├── usuario.cy.js # Tests for user management │ ├── login.cy.js # Tests for authentication ├── /support │ ├── commands │ │ ├── usuario.js # Custom Cypress commands for user management │ │ ├── login.js # Custom Cypress commands for authentication │ ├── utils │ ├── funcoes.js # Utility functions for generating random data
 
 ---
 
