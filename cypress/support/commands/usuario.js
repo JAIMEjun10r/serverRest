@@ -3,7 +3,7 @@ import { gerarNomeAleatorio, gerarEmailAleatorio } from "../utils/funcoes";
 
 const nomeAleatorio = gerarNomeAleatorio();
 const emailAleatorio = gerarEmailAleatorio();
-Cypress.Commands.add('cadastroUsuario', (token) => {         
+Cypress.Commands.add('cadastroUsuario', (token, overrides= {}) => {         
   cy.request({ 
     method: 'POST',
     url: 'http://localhost:3000/usuarios',
@@ -17,7 +17,7 @@ Cypress.Commands.add('cadastroUsuario', (token) => {
       "email": emailAleatorio,
       "password": "testesssss",
       "administrador": "true",
-      // ...overrides,
+      ...overrides,
     }   
   })
 });
