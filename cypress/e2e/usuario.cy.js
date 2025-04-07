@@ -1,6 +1,6 @@
 let tokenValue;
 beforeEach(() => {
-  cy.login().then(authorization => {  // Obter token para criar um cartão
+  cy.login().then(authorization => {  
     tokenValue = authorization;
     console.log('Token recebido:', tokenValue)
   });
