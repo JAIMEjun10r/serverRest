@@ -12,6 +12,7 @@ context('Cenários de erro', () => {
       expect(jsonData).to.have.property('email').and.to.equal('email deve ser um email válido')
     });
   })
+  
 
   it('Senha incorreta', () => {
     cy.loginCenariosNegativos({ password: '123456' }).then((response) => {
